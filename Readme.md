@@ -52,7 +52,7 @@ A simple, modern mini-blog website built using **HTML, CSS, and JavaScript**, wi
 
 1. Clone the repository:  
    ```bash
-   git clone <your-repo-url>
+   git repo clone arunvanakalla/simple-static-web-page-
 ````
 
 2. Open `index.html` in your browser.
