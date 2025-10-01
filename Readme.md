@@ -1,16 +1,19 @@
-# Arun's Mini Blog
+# Dev Articles Explorer
 
-A simple, modern mini-blog website built using **HTML, CSS, and JavaScript**, with dynamic posts fetched from a public API. This project demonstrates linked pages, responsive design, interactive posts, and basic Git version control.
+A modern articles discovery platform built using **HTML, CSS, and JavaScript**, with dynamic articles fetched from the DEV.to API. This project demonstrates linked pages, responsive design, interactive articles, search functionality, and modern UX patterns.
 
 ---
 
 ## Features
 
-- Multiple linked HTML pages: **Home, About, Contact, Posts**
+- Multiple linked HTML pages: **Home, About, Contact, Explore**
 - Responsive and modern design with **CSS styling**
-- Dynamic posts fetched from [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
-- Shuffle and display 10 random posts on the Posts page
-- Interactive **like buttons** for each post
+- Dynamic articles fetched from [DEV.to API](https://dev.to/api)
+- **Search functionality** - Filter articles by title, description, or tags
+- **Refresh button** - Get new random articles
+- **Load more button** - Fetch additional articles
+- Interactive **like buttons** for each article
+- Enhanced loading states and error handling
 - Git version control to track changes
 
 ---
@@ -27,13 +30,17 @@ A simple, modern mini-blog website built using **HTML, CSS, and JavaScript**, wi
 - Styled info boxes for content
 
 ### Contact
-- Provides contact information
-- Includes Email, Phone, Twitter, and LinkedIn
+- Provides platform contact information
+- Includes Email, GitHub, Twitter, and LinkedIn
 
-### Posts
-- Fetches posts dynamically from an API
-- Each post shows an **author avatar**, **title**, **content**, and **like button**
-- Posts are shuffled on every reload
+### Explore (formerly Posts)
+- Fetches articles dynamically from DEV.to API
+- **Search functionality** to filter articles in real-time
+- **Refresh button** to get new random articles
+- **Load more button** to fetch additional articles
+- Each article shows an **author avatar**, **title**, **description**, **tags**, and **like button**
+- Enhanced loading states with retry functionality
+- "No results found" message when search yields no matches
 
 ---
 
@@ -41,8 +48,8 @@ A simple, modern mini-blog website built using **HTML, CSS, and JavaScript**, wi
 
 - **HTML5**: Structure and content of the website  
 - **CSS3**: Styling, responsive design, and hover effects  
-- **JavaScript (ES6)**: API calls using `fetch`, `async/await`, DOM manipulation  
-- **JSONPlaceholder API**: Dummy posts for demonstration  
+- **JavaScript (ES6)**: API calls using `fetch`, `async/await`, DOM manipulation, search functionality  
+- **DEV.to API**: Real articles from the developer community  
 - **Font Awesome**: Icons for UI enhancement  
 - **Git**: Version control  
 
@@ -57,14 +64,17 @@ A simple, modern mini-blog website built using **HTML, CSS, and JavaScript**, wi
 
 2. Open `index.html` in your browser.
 3. Navigate through pages using the header menu.
-4. Go to `Posts` page to see dynamically fetched posts.
+4. Go to `Explore` page to see dynamically fetched articles.
+5. Use the search bar to filter articles by keywords.
+6. Click "Get New Articles" to refresh with new random content.
+7. Click "Load More Articles" to fetch additional articles.
 
 ---
 
 ## Project Structure
 
 ```
-mini-blog/
+dev-articles-explorer/
 ├── index.html
 ├── about.html
 ├── contact.html
@@ -74,10 +84,22 @@ mini-blog/
 └── README.md
 ```
 
+## Recent Updates
+
+- ✅ Rebranded from "Arun's Tech Blog" to "Dev Articles Explorer"
+- ✅ Added real-time search functionality
+- ✅ Implemented refresh and load more buttons
+- ✅ Enhanced loading states and error handling
+- ✅ Changed navigation from "Posts" to "Explore"
+- ✅ Updated all content to reflect articles explorer concept
+
 ## Future Improvements
 
-* Add a **comment section** for each post
-* Integrate **real backend API** for storing posts
+* Add **category filtering** by programming languages/topics
+* Implement **bookmark functionality** to save articles
+* Add **dark/light mode toggle**
+* Integrate **article preview** modals
+* Add **trending topics** section
 * Add **authentication/login system**
 * Improve **mobile responsiveness**
 

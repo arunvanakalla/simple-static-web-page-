@@ -2,31 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Posts</title>
+  <title>Articles • Dev Articles Explorer</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
   <header class="header">
-    <div class="logo"><span>Arun's</span>Blog</div>
+    <div class="logo"><span>Dev</span>Articles Explorer</div>
     <nav class="navbar">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
-      <a href="posts.html" class="active">Posts</a>
+      <a href="posts.html" class="active">Explore</a>
     </nav>
   </header>
 
   <main class="content">
     <section class="posts-section">
-      <h2>Latest Posts</h2>
+      <div class="section-header">
+        <h2>Latest from the Community</h2>
+        <button id="refresh-btn" class="refresh-btn">🔄 Get New Articles</button>
+      </div>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="🔍 Search articles by title, description, or tags..." class="search-input">
+      </div>
       <div id="posts-container"></div>
+      <div class="load-more-container">
+        <button id="load-more-btn" class="load-more-btn">📚 Load More Articles</button>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© 2025 My Blog | All rights reserved</p>
+    <p>© 2025 Dev Articles Explorer | All rights reserved</p>
   </footer>
 
   <script src="script.js"></script>
