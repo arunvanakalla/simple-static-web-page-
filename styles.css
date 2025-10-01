@@ -272,7 +272,7 @@ body {
   gap: 16px;
 }
 
-.refresh-btn, .load-more-btn {
+.refresh-btn {
   background: linear-gradient(135deg, #60a5fa, #34d399);
   color: white;
   border: none;
@@ -285,23 +285,15 @@ body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.refresh-btn:hover, .load-more-btn:hover {
+.refresh-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 16px rgba(0,0,0,0.15);
 }
 
-.refresh-btn:active, .load-more-btn:active {
+.refresh-btn:active {
   transform: translateY(0);
 }
 
-.load-more-container {
-  text-align: center;
-  margin-top: 32px;
-}
-
-.load-more-btn {
-  background: linear-gradient(135deg, #8b5cf6, #06b6d4);
-}
 
 /* Search Container */
 .search-container {
