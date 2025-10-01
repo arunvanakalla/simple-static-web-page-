@@ -52,8 +52,8 @@ A simple, modern mini-blog website built using **HTML, CSS, and JavaScript**, wi
 
 1. Clone the repository:  
    ```bash
-   git repo clone arunvanakalla/simple-static-web-page-
-````
+   git clone https://github.com/arunvanakalla/simple-static-web-page-.git
+   ```
 
 2. Open `index.html` in your browser.
 3. Navigate through pages using the header menu.
